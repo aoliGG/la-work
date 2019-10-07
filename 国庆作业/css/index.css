@@ -1,0 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#tou {
+	width: 100%;
+	height: 70px;
+	background-color: #35349a;
+	text-align: center;
+}
+
+#tou-1-1 {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px 25px 25px 25px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+#tou-1-2 {
+	color: white;
+	float: left;
+	margin-top: 23px;
+	margin-left: 8px;
+}
+
+#tou-2 {
+	height: 40px;
+	color: white;
+	margin-right: 100px;
+}
+
+#tou-2 ul {
+	list-style: none;
+	line-height: 65px;
+}
+
+#tou-2 li {
+	display: block;
+	float: right;
+	margin-left: 20px;
+}
+
+#ti {
+	background-color:#EDF3F9;
+
+}
+
+
+#ti-1-1 {
+	color: #607d8b;
+	font-size: 30px;
+	margin-left: 50px;
+	padding-top: 50px;
+}
+
+#ti-1-2 {
+	color: #607d8b;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+#ti-1-3 {
+	margin-top: 40px;
+	margin-left: 50px;
+}
+
+#ti-1-4 {
+	color: #607d8b;
+	font-size: 13px;
+	margin-top: 8px;
+	margin-left: 350px;
+}
+#ti-1-5{
+	color: #607d8b;
+	font-size: 13px;
+	margin-top: 8px;
+	margin-left: 380px;
+	margin-bottom: 80px;
+}
+#ti-2{
+
+	background-color:#EDF3F9;
+}
+#ti-2-1{
+	color: #17a3ff;
+     font-size:18px;
+     padding-bottom: 15px;
+}
+#ti-2-4{
+	color: #17a3ff;
+     font-size:18px;
+     padding-bottom: 15px;
+     padding-top: 15px;
+}
+#ti-2-2{
+	 height: 45px;
+	 width: 900px;
+	 border-radius:3px;
+	 border: 0px;
+	
+	  }
+#ti-2-3{
+	 height: 170px;
+	 width: 900px;
+	 border-radius:3px;
+	 border: 0px;
+	
+	  }
+#ti-2-5{
+	
+	height: 45px;
+	width: 900px;
+	 border-radius:20px;
+	 border: 0px;
+	 background-color:#1478FF;
+	
+}
+input::-webkit-input-placeholder{
+
+font-size: 15px;
+
+
+}
+#ti{
+	position: relative;
+}
+#ti-1{
+	display: inline-block;
+}
+#ti-2{
+	display: inline-block;
+	position: absolute;
+	right: 48px;
+	top: 48px;
+}
+.footer {
+    width: 86.5%;
+    background: #E1E7F1;
+    padding: 3rem 8rem 3.5rem 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-item {
+    flex-basis: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item strong {
+    color: black;
+    display: block;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.footer .footer-item a {
+    display: inline-block;
+    padding: 2px 0;
+    font-size: 0.9rem;
+    color: #607d8b;
+}
+a {
+    text-decoration: none;
+}
+.bottom-strip {
+    width: 86.5%;
+    min-height: 60px;
+    background: rgba(0, 16, 96, 0.15);
+    padding: 0 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards-accepted em {
+    display: block;
+    font-size: 0.6rem;
+}
+.cards-accepted img {
+    max-width: 100%;
+    height: 26px;
+}
+.bottom-strip .country span {
+    color: #546d79;
+    font-size: 0.9rem;
+}
+.country img {
+    width: 35px;
+    height: 35px;
+}

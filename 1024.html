@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="mydiv"></div>
+		<p>班级人员：阿毛,老猫,狗子,笑傲,西卡</p>
+		<input id="in1" type="text">
+		<button id="btn1">签到</button>
+		<button id="btn2">未签到</button>
+		<script>
+			var mydiv = document.getElementById('mydiv');
+			var in1 = document.getElementById('in1');
+			var btn1 = document.getElementById('btn1');
+			var btn2 = document.getElementById('btn2');
+			var name1 =  '阿毛,老猫,狗子,笑傲,西卡';
+			var a = [];
+			btn1.onclick = function() {
+				a.push(in1.value);
+				in1.value = "";
+				mydiv.innerHTML = '已签到:'+a
+			}
+			btn2.onclick = function() {
+				var reg = new RegExp(a.join('|'),"ig");
+				var val = name1.replace(reg,"");
+				mydiv.innerHTML = '未签到:' + val;
+			}
+		</script>
+	
+
+</button></body>
+</html>

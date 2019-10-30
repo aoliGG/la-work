@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="jquery.min.js"></script>
+		<style>
+			#mydiv {
+				position: absolute;
+				top: 120px;
+				left: 130px;
+				display: none;
+			}
+			
+			#mydiv>div {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				float: left;
+				border: 2px solid #;
+			}
+			
+			#div1 {
+				background-color: red;
+			}
+			
+			#div2 {
+				background-color: yellow;
+			}
+			
+			#div3 {
+				background-color: blue;
+			}
+			
+			#div4 {
+				background-color: green;
+			}
+			
+			#div5 {
+				background-color: palevioletred;
+			}
+			
+			#one {
+				width: 80px;
+				height: 80px;
+				background-color: aquamarine;
+				border: 3px solid #ffffff;
+				position: absolute;
+				top: 105px;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="one"></div>
+		<div id="mydiv">
+			<div id="div1"></div>
+			<div id="div2"></div>
+			<div id="div3"></div>
+			<div id="div4"></div>
+			<div id="div5"></div>
+		</div>
+		<script>
+			$("#div1").click(function() {
+				$("body").css({
+					"background-color": "red"
+				});
+				$("#one").css({
+					"background-color": "red"
+				});
+			})
+			$("#div2").click(function() {
+				$("body").css({
+					"background-color": "yellow"
+				});
+				$("#one").css({
+					"background-color": "yellow"
+				});
+			})
+			$("#div3").click(function() {
+				$("body").css({
+					"background-color": "palevioletred"
+				});
+				$("#one").css({
+					"background-color": "palevioletred"
+				});
+			})
+			$("#div4").click(function() {
+				$("body").css({
+					"background-color": "green"
+				});
+				$("#one").css({
+					"background-color": "green"
+				});
+			})
+			$("#div5").click(function() {
+				$("body").css({
+					"background-color": "palevioletred"
+				});
+				$("#one").css({
+					"background-color": "palevioletred"
+				});
+			})
+			$("#one").click(function() {
+				$("#mydiv").css({
+					"display": "block"
+				});
+			})
+		</script>
+	</body>
+
+</html>

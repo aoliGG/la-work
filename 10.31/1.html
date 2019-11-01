@@ -82,60 +82,19 @@
 
 		
 		<script>
-        $(function () {
-            $("input[name='num']").change(function () {
-                var $val = parseFloat($(this).val());
-                if ($val > 0) {
-                    $(this).parent().next().text($val * parseFloat($(this).parent().prev().text()));
-                } else if ($val == 0) {
-                    $("#cart li span").trigger("click");
-                } else {
-                    $(this).val(1);
-                }
-                calcTotal();
-            });
-
-            $("input[value='-']").click(function () {
-                $(this).next().val(parseInt($(this).next().val()) - 1);
-                $("input[name='num']").trigger("change");
-            });
-            $("input[value='+']").click(function () {
-                $(this).prev().val(parseInt($(this).prev().val()) + 1);
-                $("input[name='num']").trigger("change");
-            });
-            $("input[name='one']").click(function () {
-            });
-
-            $("input[name='too']").click(function () {
-                var $ret = $(this).prop("checked");
-                $("input[name='one']").each(function () {
-                    $(this).prop('checked', $ret);
-                });
-                calcTotal();
-            });
-            
-            $("input[name='add']").click(function () {
-                var i = Math.floor((Math.random() * 4));
-                var $cloneNode = $modelNode.clone(true);
-                var $children = $cloneNode.children();
-                $children.eq(1).text(product[i]);
-                $children.eq(2).text(price[i]);
-                $children.eq(4).text(price[i]);
-                $("#total").before($modelNode);
-            });
-        })
-        function calcTotal() {
-            var total = 0;
-            var $checkBox = $("input[name='one']");
-            var $price = $(".price");
-            $checkBox.each(function () {
-                if ($(this).prop("checked")) {
-                    var i = $checkBox.index($(this));
-                    total += parseFloat($price.eq(i).text());
-                }
-            });
-            $("#total span").text(total);
-        }
+      $(function() {
+				$("input[name='num']").change(function() {
+					var $val = parseFloat($(this).val());
+					if($val > 0) {
+						$(this).parent().next().text($val * parseFloat($(this).parent().prev().text()));
+					} else if($val == 0) {
+						$("#cart li span");
+					} else {
+						$(this).val(1);
+					}
+					calcTotal();
+				});
+			})
     </script>
 	</body>
 
